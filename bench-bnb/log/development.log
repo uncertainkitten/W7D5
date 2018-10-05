@@ -28,3 +28,406 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 2366ms (Views: 2363.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (1395.0ms)[0m  [1m[35mCREATE DATABASE "bench_bnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1094.6ms)[0m  [1m[35mCREATE DATABASE "bench_bnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:18:45 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/025b9b328744abf2/variables" for 127.0.0.1 at 2018-10-05 14:18:45 -0700
+  [1m[35m (349.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (195.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (84.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6802361601607853190)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181005211107)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (113.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181005211107_create_users.rb:3
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20181005211107_create_users.rb:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/migrate/20181005211107_create_users.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (58.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181005211107"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (10.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (12.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-05 21:21:42.640130"], ["updated_at", "2018-10-05 21:21:42.640130"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6802361601607853190)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:22:07 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/beca004912d25889/variables" for 127.0.0.1 at 2018-10-05 14:22:07 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:22:19 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/7ecc03bf90e0da08/variables" for 127.0.0.1 at 2018-10-05 14:22:20 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:22:20 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/26d8979f534925ae/variables" for 127.0.0.1 at 2018-10-05 14:22:20 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:22:22 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/80fbaaee9edc9846/variables" for 127.0.0.1 at 2018-10-05 14:22:22 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:22:24 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/a9ec6c80d13874e9/variables" for 127.0.0.1 at 2018-10-05 14:22:24 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:22:28 -0700
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+:
+
+Started POST "/__better_errors/d74553324b2dabc2/variables" for 127.0.0.1 at 2018-10-05 14:22:28 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:23:31 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1571ms (Views: 1554.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 14:57:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 524ms (Views: 493.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:17:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 110ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:21:17 -0700
+
+SyntaxError - syntax error, unexpected tIVAR, expecting keyword_end
+      render :json @user.errors, status: 422
+                   ^~~~~
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/controllers/api/users_controller.rb:9: syntax error, unexpected tLABEL, expecting '='
+...der :json @user.errors, status: 422
+...                        ^~~~~~~:
+  app/controllers/api/users_controller.rb:9:in `'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:22:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 161ms (Views: 148.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:22:50 -0700
+
+SyntaxError - syntax error, unexpected '{', expecting keyword_end
+      render :json { errors: "#{@user.errors}" },...
+                   ^
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/controllers/api/users_controller.rb:9: syntax error, unexpected '}', expecting keyword_end
+...n { errors: "#{@user.errors}" }, status: 422
+...                              ^:
+  app/controllers/api/users_controller.rb:9:in `'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:23:20 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:23:25 -0700
+
+SyntaxError - syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      render :json errors: "#{@user.errors}", status: ...
+                   ^~~~~~
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/controllers/api/users_controller.rb:9: syntax error, unexpected ',', expecting keyword_end
+...json errors: "#{@user.errors}", status: 422
+...                              ^:
+  app/controllers/api/users_controller.rb:9:in `'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:23:56 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:23:58 -0700
+
+SyntaxError - syntax error, unexpected tLABEL
+      render json: errors: "#{@user.errors}", status: 4...
+                   ^~~~~~~
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/controllers/api/users_controller.rb:9: syntax error, unexpected ',', expecting keyword_end
+...son: errors: "#{@user.errors}", status: 422
+...                              ^:
+  app/controllers/api/users_controller.rb:9:in `'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:31:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 114ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:31:23 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"Cassandra", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - Range unspecified. Specify the :in, :within, :maximum, :minimum, or :is option.:
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<main>'
+  app/controllers/api/users_controller.rb:4:in `create'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:31:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 110ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:31:58 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"Cassandra", "password"=>"[FILTERED]"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/api/users_controller.rb:16:in `user_params'
+  app/controllers/api/users_controller.rb:4:in `create'
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:33:09 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Cassandra", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 63.1ms)
+
+
+
+NoMethodError - undefined method `user' for #<User:0x00007fdafa0124f8>:
+  app/controllers/api/users_controller.rb:5:in `create'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:36:32 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:36:53 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Cassandra", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 7.9ms)
+
+
+
+NoMethodError - undefined method `user' for #<User:0x00007fdaf9661d50>:
+  app/controllers/api/users_controller.rb:5:in `create'
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:37:18 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"username"=>"Cassandra", "password"=>"[FILTERED]"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/api/users_controller.rb:16:in `user_params'
+  app/controllers/api/users_controller.rb:4:in `create'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:38:15 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 255ms (Views: 239.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:38:28 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Cassandra", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (15.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Cassandra"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Cassandra"], ["password_digest", "$2a$10$3ob0BiR2VMyjMgINvK.O/epzNdHcIAijUO53la5toCajF1Z5VWNem"], ["session_token", "0TxkWGOtaK10Hvy0jdPKbw"], ["created_at", "2018-10-05 22:38:28.426900"], ["updated_at", "2018-10-05 22:38:28.426900"]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (25.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (1.7ms)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 48.1ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+  json.extract! @user :id, :username
+                      ^
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/views/api/users/show.json.jbuilder:2: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+...n.extract! @user :id, :username
+...                               ^
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/views/api/users/show.json.jbuilder:6: syntax error, unexpected ':', expecting keyword_end
+  json.extract! @user :session_token
+                      ^
+/Users/appacademy/Desktop/W7D5/bench-bnb/app/views/api/users/show.json.jbuilder:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~:
+  app/views/api/users/show.json.jbuilder:2:in `'
+  app/controllers/api/users_controller.rb:7:in `create'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:38:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:38:56 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Cassandra", "password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ':', expecting keyword_end
+  after_initialize: :ensure_session_token
+                  ^:
+  app/models/user.rb:7:in `'
+  app/controllers/api/users_controller.rb:4:in `create'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:39:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:39:54 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Cassandra", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (10.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Cassandra"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 401 Unauthorized in 280ms (Views: 0.4ms | ActiveRecord: 16.9ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:41:14 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Rika", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Rika"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Rika"], ["password_digest", "$2a$10$9FP0dpQOd46Ef4U3Vxpmz.niAbVJZe2lqh35QOwTUNR8zwK3TZTgC"], ["session_token", "bIWECCQx_5c-BxOfvB0AOQ"], ["created_at", "2018-10-05 22:41:15.035737"], ["updated_at", "2018-10-05 22:41:15.035737"]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (0.9ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 1.9ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~:
+  app/views/api/users/show.json.jbuilder:10:in `'
+  app/controllers/api/users_controller.rb:7:in `create'
+
+Started GET "/" for 127.0.0.1 at 2018-10-05 15:41:40 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:41:44 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"Rika", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Rika"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/users_controller.rb:5
+Completed 401 Unauthorized in 81ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/users" for 127.0.0.1 at 2018-10-05 15:42:08 -0700
+Processing by Api::UsersController#create as JSON
+  Parameters: {"user"=>{"username"=>"UserThree", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "UserThree"], ["LIMIT", 1]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "UserThree"], ["password_digest", "$2a$10$fG3G5IcrCiNFpBBc441SRe/xuP7/g1HR.RSpkpUlLggHKCPCLI6Xm"], ["session_token", "iMbSHEZYFdZ02fp4Z_mbIQ"], ["created_at", "2018-10-05 22:42:08.897436"], ["updated_at", "2018-10-05 22:42:08.897436"]]
+  ↳ app/controllers/api/users_controller.rb:5
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/users_controller.rb:5
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/show.json.jbuilder (51.1ms)
+Completed 200 OK in 141ms (Views: 58.5ms | ActiveRecord: 1.7ms)
+
+

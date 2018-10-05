@@ -1,0 +1,30 @@
+Started GET "/" for 127.0.0.1 at 2018-10-05 13:58:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 512ms (ActiveRecord: 0.0ms)
+
+
+
+Sprockets::FileNotFound - couldn't find file 'jquery-ujs' with type 'application/javascript'
+Checked in these paths: 
+  /Users/appacademy/Desktop/W7D5/bench-bnb/app/assets/config
+  /Users/appacademy/Desktop/W7D5/bench-bnb/app/assets/images
+  /Users/appacademy/Desktop/W7D5/bench-bnb/app/assets/javascripts
+  /Users/appacademy/Desktop/W7D5/bench-bnb/app/assets/stylesheets
+  /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /usr/local/var/rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /Users/appacademy/Desktop/W7D5/bench-bnb/node_modules:
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__930799655779372335_70144672627000'
+
+Started POST "/__better_errors/a9b57bca5629a639/variables" for 127.0.0.1 at 2018-10-05 13:58:40 -0700
+Started GET "/" for 127.0.0.1 at 2018-10-05 13:59:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2366ms (Views: 2363.5ms | ActiveRecord: 0.0ms)
+
+
